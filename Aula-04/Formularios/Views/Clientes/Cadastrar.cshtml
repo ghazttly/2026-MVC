@@ -1,0 +1,56 @@
+@model MVC2026.Cliente
+@{
+    ViewData["Title"] = "Cadastro de Clientes";
+}
+
+<div class="container">
+    <h1 class="text-center mt-3 fw-bold">Cadastro de Clientes</h1>
+
+    <form action="#" method="get">
+        <div class="row">
+            <div class="col-12 col-md-4 col-xl-3 mt-3">
+                <label asp-for="Id">Código</label>
+                <input type="number" class="form-control" placeholder="Código do Cliente..." asp-for="Id">
+            </div>
+
+            <div class="col-12 col-md col-xl mt-3">
+                <label asp-for="Nome">Nome</label>
+                <input type="text" class="form-control" placeholder="Nome Completo..." asp-for="Nome">
+            </div>
+
+            <div class="col-12 col-md-12 col-xl-12 mt-3">
+                <label asp-for="Email">Email</label>
+                <input type="text" class="form-control" placeholder="Email..." asp-for="Email">
+            </div>
+
+            <div class="col-12 col-md-4 col-xl mt-3">
+                <label asp-for="Celular">Celular</label>
+                <input type="text" class="form-control" placeholder="Numero Celular..." asp-for="Celular">
+            </div>
+
+            <div class="col-12 col-md-4 col-xl mt-3">
+                <label asp-for="DataNascimento">Data</label>
+                <input type="date" class="form-control" placeholder="Data de Nascimento..." asp-for="DataNascimento">
+            </div>
+
+
+            <div class="col-12 col-md-4 col-xl mt-3">
+                <label asp-for="CPF">CPF</label>
+                <input type="text" class="form-control" placeholder="CPF..." asp-for="CPF">
+            </div>
+
+
+
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <input type="reset" value="Limpar" class="w-50 btn-outline-secondary" />
+                </div>
+                <div class="col text-center">
+                    <input type="submit" value="Enviar" class="w-50 btn btn-primary" />
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+</div>
